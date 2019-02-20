@@ -78,7 +78,7 @@ a.skip:focus{
 h1 {
   font-family: 'Open Sans Condensed';
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 300%;
   background-color: #000000;
   padding: 5% 0% 2% 2%;
   margin-top: 2%;
@@ -173,8 +173,8 @@ footer {
   background-color: #F39AC0;
   border-style: solid;
   border-color: #F39AC0;
-  margin: 8px;
-  width: 75vw;
+  margin: 4%;
+  width: 75%;
   padding-bottom: 2%;
   border-radius: 2%;
 }
@@ -187,7 +187,10 @@ footer {
 
 .names_container > p {
   font-size: 250%;
+  font-size: 200%;
   background-color: #eddce3;
+  border-radius: 2%;
+  text-align: center;
 }
 
 .wuts_baton > h2 {
@@ -200,4 +203,56 @@ footer {
 
 .wuts_baton h3, .wuts_baton p {
   margin-left: 5%;
+}
+
+iframe {
+  height: 50%;
+  width: 50%;
+}
+
+@media only screen and (min-width: 600px){
+  /* for tablets */
+
+}
+
+@media only screen and (min-width: 768px){
+  /* for desktop */
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav a {
+    padding: 1%;
+  }
+
+  .current {
+    padding: 1%;
+  }
+
+  .names_container h2 {
+    font-size: 200%;
+  }
+
+  .names_container > p {
+    text-align: center;
+  }
+
+  /*.names_container div {
+    grid-column: 1/3;
+    width: 80%;
+    justify-content: center;
+  }*/
+
+  div div {
+    display: grid;
+    grid-template-columns: 70% 30%;
+  }
+
+  div h2, div p {
+    grid-column-start: 1;
+    text-align: left;
+    padding-bottom: 0%;
+    width: 50%;
+  }
 }
