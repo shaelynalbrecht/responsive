@@ -56,7 +56,7 @@ body{
   background: #ffffff;
   color: #3c006f;
   /*size: 200%;*/
-  padding-top: 1%;
+  padding-top: 0%;
   /*padding-bottom: 1%;*/
 }
 
@@ -80,9 +80,12 @@ h1 {
   color: #ffffff;
   font-size: 300%;
   background-color: #000000;
-  padding: 5% 0% 2% 2%;
+  padding: 2% 0% 2% 2%;
   margin-top: 2%;
   text-align: center;
+  border-style: solid;
+  border-bottom-color: #A7A6AD;
+  border-bottom-width: thin;
 }
 
 h2 {
@@ -91,7 +94,7 @@ h2 {
   padding-top: 4%;
   padding-left: 4%;
   padding-right: 4%;
-  font-size: 3vh;
+  font-size: 200%;
 }
 
 h3 {
@@ -104,7 +107,7 @@ h3 {
 }
 
 p {
-  color: #450920;
+  color: #000;
   font-family: 'Open Sans';
   padding-top: 2%;
   padding-left: 7%;
@@ -156,7 +159,7 @@ footer {
   width: 100vw;
   min-height: 5%;
   padding-top: 2vh;
-	padding-bottom: 25vh;
+	padding-bottom: 10vh;
   position: relative;
 }
 
@@ -169,7 +172,7 @@ footer {
   align-items: center;
 }
 
-.names_container  div {
+.names_container  div.twirler_div {
   background-color: #F39AC0;
   border-style: solid;
   border-color: #F39AC0;
@@ -206,7 +209,7 @@ footer {
 }
 
 iframe {
-  height: 50%;
+  /*height: 50%;*/
   width: 50%;
 }
 
@@ -218,16 +221,27 @@ iframe {
 @media only screen and (min-width: 768px){
   /* for desktop */
   nav {
-    display: flex;
+    /*display: grid;*/
     flex-direction: row;
+    /*grid-template-columns: 3;*/
+    /*flex-wrap: wrap;*/
   }
 
   nav a {
     padding: 1%;
+    font-size: 150%;
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 0%;
   }
 
   .current {
     padding: 1%;
+    border-bottom-style: none;
+  }
+
+  h1 {
+    margin-top: 0%;
   }
 
   .names_container h2 {
@@ -236,6 +250,7 @@ iframe {
 
   .names_container > p {
     text-align: center;
+    font-size: 150%;
   }
 
   /*.names_container div {
@@ -244,15 +259,24 @@ iframe {
     justify-content: center;
   }*/
 
-  div div {
+  div.twirler_div {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: -2%;
+    margin-bottom: -2%;
   }
 
-  div h2, div p {
+  div.twirler_div div > h2, div.twirler_div div > p {
     grid-column-start: 1;
     text-align: left;
     padding-bottom: 0%;
-    width: 50%;
+    width: 100%;
+  }
+
+  div.twirler_div > iframe {
+    grid-column-start: 2;
+    align-self: flex-start;
+    padding: 5% 5% 0% 0%;
+    width: 100%;
   }
 }
