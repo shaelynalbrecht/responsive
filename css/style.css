@@ -130,7 +130,7 @@ p {
 
 main {
   padding-top: 3%;
-  padding-bottom: 2%;
+  padding-bottom: 50%;
   min-height: 80%;
 }
 
@@ -159,10 +159,10 @@ footer {
   background: #f599c0;
   height: auto;
   width: 100vw;
-  min-height: 5%;
-  padding-top: 2vh;
+  bottom: 0;
+  /*padding-top: 2vh;*/
 	padding-bottom: 10vh;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 /* Names to Know page flex styling */
