@@ -91,7 +91,7 @@ h2, h3 {
 }
 
 h3 {
-  color: #A53860;
+  color: #000;
   padding-top: 2%;
   font-size: 150%;
 }
@@ -153,7 +153,7 @@ footer {
   align-items: center;
 }
 
-.names_container  div.twirler_div, .my_story_p, .intro_to_baton, .wuts_baton p {
+.names_container  div.twirler_div, .my_story_p, .intro_to_baton, .wuts_baton p, .com_twirl_div p {
   background-color: #F39AC0;
   border-style: solid;
   border-color: #F39AC0;
@@ -163,7 +163,7 @@ footer {
   border-radius: 2%;
 }
 
-.intro_to_baton, .wuts_baton p {
+.intro_to_baton, .wuts_baton p, .com_twirl_div p {
   width: 90%;
   margin: 2%;
 }
@@ -197,14 +197,14 @@ footer {
 
 .wuts_baton h3, {
   margin-left: 2%;
-  padding-bottom: 1%;
 }
 
-h3 span {
+h3 span, h2 span{
   margin-left: 1%;
   padding: 1%;
-  background-color: #fff;
-  border-color: #fff;
+  margin-bottom: -1%;
+  background-color: #EDDCE3;
+  border-color: #EDDCE3;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
 }
@@ -214,11 +214,12 @@ h3 span {
   padding-left: 5%;
 }
 
-.wuts_baton p {
+.wuts_baton p, .com_twirl_div p {
   margin-top: 1.5%;
   margin-left: 5%;
   margin-bottom: 5%;
   padding-left: 3%;
+  border-top-left-radius: 0%;
 }
 
 iframe {
