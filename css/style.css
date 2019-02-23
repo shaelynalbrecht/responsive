@@ -153,7 +153,7 @@ footer {
   align-items: center;
 }
 
-.names_container  div.twirler_div, .my_story_p, .intro_to_baton {
+.names_container  div.twirler_div, .my_story_p, .intro_to_baton, .wuts_baton p {
   background-color: #F39AC0;
   border-style: solid;
   border-color: #F39AC0;
@@ -163,7 +163,7 @@ footer {
   border-radius: 2%;
 }
 
-.intro_to_baton {
+.intro_to_baton, .wuts_baton p {
   width: 90%;
   margin: 2%;
 }
@@ -188,14 +188,37 @@ footer {
 
 .wuts_baton > h2 {
   font-size: 250%;
+  padding-bottom: 2%;
 }
 
 .baton_horiz {
   width: 100vh;
 }
 
-.wuts_baton h3, .wuts_baton p {
+.wuts_baton h3, {
+  margin-left: 2%;
+  padding-bottom: 1%;
+}
+
+h3 span {
+  margin-left: 1%;
+  padding: 1%;
+  background-color: #fff;
+  border-color: #fff;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.wuts_baton h2 {
+  color: #fff;
+  padding-left: 5%;
+}
+
+.wuts_baton p {
+  margin-top: 1.5%;
   margin-left: 5%;
+  margin-bottom: 5%;
+  padding-left: 3%;
 }
 
 iframe {
