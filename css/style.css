@@ -146,14 +146,14 @@ footer {
 
 /* Names to Know page flex styling */
 
-.names_container, .my_story_p, .overall_my_story_container {
+.names_container, .my_story_p, .overall_my_story_container, .what_is_baton_divs_container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.names_container  div.twirler_div, .my_story_p {
+.names_container  div.twirler_div, .my_story_p, .intro_to_baton {
   background-color: #F39AC0;
   border-style: solid;
   border-color: #F39AC0;
@@ -161,6 +161,15 @@ footer {
   width: 75%;
   padding-bottom: 2%;
   border-radius: 2%;
+}
+
+.intro_to_baton {
+  width: 90%;
+  margin: 2%;
+}
+
+.intro_to_baton p {
+  padding: 2%;
 }
 
 .names_container p, .names_container h2, .my_story_p p {
@@ -182,7 +191,7 @@ footer {
 }
 
 .baton_horiz {
-  width: 100%;
+  width: 100vh;
 }
 
 .wuts_baton h3, .wuts_baton p {
