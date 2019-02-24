@@ -212,6 +212,7 @@ h3 span, h2 span{
 .wuts_baton h2 {
   color: #fff;
   padding-left: 5%;
+  background-color: #000;
 }
 
 .wuts_baton p, .com_twirl_div p {
