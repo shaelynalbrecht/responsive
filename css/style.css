@@ -106,7 +106,7 @@ p {
 }
 
 .homepage > p {
-  background-color: #F39AC0;
+  background-color: rgba(242, 242, 242, 0.8);
   margin: 5%;
   padding: 5%;
   font-size: 175%;
@@ -154,13 +154,14 @@ footer {
 }
 
 .names_container  div.twirler_div, .my_story_p, .intro_to_baton, .wuts_baton p, .com_twirl_div p {
-  background-color: #F39AC0;
+  background-color: rgba(242, 242, 242, 0.8);
+  /*color F39AC0*/
   border-style: solid;
   border-color: #F39AC0;
   margin: 4%;
   width: 75%;
   padding-bottom: 2%;
-  border-radius: 2%;
+  /*border-radius: 2%;*/
 }
 
 .intro_to_baton, .wuts_baton p, .com_twirl_div p {
@@ -172,6 +173,10 @@ footer {
   padding: 2%;
 }
 
+.twirler_div p {
+  padding: 4%;
+}
+
 .names_container p, .names_container h2, .my_story_p p {
   padding-bottom: 2%;
   width: 75vw;
@@ -181,9 +186,9 @@ footer {
 .names_container > p {
   font-size: 250%;
   font-size: 200%;
-  background-color: #eddce3;
+  background-color: rgba(242, 242, 242, 0.8);
   border-radius: 2%;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 .wuts_baton > h2 {
@@ -202,11 +207,13 @@ footer {
 h3 span, h2 span{
   margin-left: 1%;
   padding: 1%;
+  padding-bottom: 0%;
   margin-bottom: -1%;
-  background-color: #EDDCE3;
-  border-color: #EDDCE3;
-  border-top-left-radius: 2%;
-  border-top-right-radius: 2%;
+  color: #fff;
+  /*background-color: #EDDCE3;
+  border-color: #EDDCE3;*/
+  /*border-top-left-radius: 2%;
+  border-top-right-radius: 2%;*/
 }
 
 .wuts_baton h2 {
@@ -220,13 +227,17 @@ h3 span, h2 span{
   margin-left: 5%;
   margin-bottom: 5%;
   padding-left: 3%;
-  border-top-left-radius: 0%;
+  /*border-top-left-radius: 0%;*/
 }
 
 iframe {
   /*height: 50%;*/
   width: 50%;
   border: 0;
+}
+
+.overall_my_story_container {
+  margin-top: -3%;
 }
 
 @media only screen and (min-width: 600px){
